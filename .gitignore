@@ -34,3 +34,6 @@ build/
 # Custom folders to ignore
 AICity_data/
 results_opticalflow_kitti/
+
+*.mp4
+*.avi
