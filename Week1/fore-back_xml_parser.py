@@ -16,6 +16,9 @@ if __name__ == '__main__':
     
     soup = BeautifulSoup(xml_content, "xml")
     boxes = soup.find_all("box")
+    width = (soup.find("width").text)
+    height = (soup.find("height").text)
+    
     for box in boxes:
         parked_tag = box.find("attribute", {"name": "parked"})
         is_parked = parked_tag and parked_tag.text.strip().lower() == "true"
@@ -28,6 +31,7 @@ if __name__ == '__main__':
     
     # Now create a new XML structure with frames as the first level
     root = etree.Element("annotations")
+    etree.SubElement(root, "meta", width=width, height=height)
 
     for frame, boxes in result_struct.items():
         frame_element = etree.SubElement(root, "frame", number=frame)

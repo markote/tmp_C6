@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <annotations>
+  <meta width="1920" height="1080"/>
   <frame number="86">
     <box frame="86" xtl="536.35" ytl="41.15" xbr="591.37" ybr="81.14" outside="0" occluded="1" keyframe="1"/>
     <box frame="86" xtl="424.74" ytl="279.34" xbr="486.46" ybr="463.06" outside="0" occluded="0" keyframe="0"/>
